@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Resistencia (HTML Modificado)</title>
+    
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Calculadora de Resistencia</h1>
+
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8 col-lg-6">
+                <div class="mb-3">
+                    <form id="resistenciaForm">
+                        <div class="row g-3">
+                            
+                            <div class="col-md-4">
+                                <div class="form-group pt-4">
+                                    <label>1ra. Banda</label>
+                                    <div class="card p-2 shadow-sm" id="banda1Container">
+                                        
+                                        <label class="form-check color-option color-negro">
+                                            <input type="radio" name="b1" value="0" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">0</span>
+                                        </label>
+                                        <label class="form-check color-option color-marron">
+                                            <input type="radio" name="b1" value="1" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">1</span>
+                                        </label>
+                                        <label class="form-check color-option color-rojo">
+                                            <input type="radio" name="b1" value="2" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">2</span>
+                                        </label>
+                                        <label class="form-check color-option color-naranja">
+                                            <input type="radio" name="b1" value="3" class="form-check-input" checked>
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">3</span>
+                                        </label>
+                                        <label class="form-check color-option color-amarillo">
+                                            <input type="radio" name="b1" value="4" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">4</span>
+                                        </label>
+                                        <label class="form-check color-option color-verde">
+                                            <input type="radio" name="b1" value="5" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">5</span>
+                                        </label>
+                                        <label class="form-check color-option color-azul">
+                                            <input type="radio" name="b1" value="6" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">6</span>
+                                        </label>
+                                        <label class="form-check color-option color-violeta">
+                                            <input type="radio" name="b1" value="7" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">7</span>
+                                        </label>
+                                        <label class="form-check color-option color-gris">
+                                            <input type="radio" name="b1" value="8" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">8</span>
+                                        </label>
+                                        <label class="form-check color-option color-blanco">
+                                            <input type="radio" name="b1" value="9" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">9</span>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group pt-4">
+                                    <label>2da. Banda</label>
+                                    <div class="card p-2 shadow-sm" id="banda2Container">
+                                        
+                                        <label class="form-check color-option color-negro">
+                                            <input type="radio" name="b2" value="0" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">0</span>
+                                        </label>
+                                        <label class="form-check color-option color-marron">
+                                            <input type="radio" name="b2" value="1" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">1</span>
+                                        </label>
+                                        <label class="form-check color-option color-rojo">
+                                            <input type="radio" name="b2" value="2" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">2</span>
+                                        </label>
+                                        <label class="form-check color-option color-naranja">
+                                            <input type="radio" name="b2" value="3" class="form-check-input" checked>
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">3</span>
+                                        </label>
+                                        <label class="form-check color-option color-amarillo">
+                                            <input type="radio" name="b2" value="4" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">4</span>
+                                        </label>
+                                        <label class="form-check color-option color-verde">
+                                            <input type="radio" name="b2" value="5" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">5</span>
+                                        </label>
+                                        <label class="form-check color-option color-azul">
+                                            <input type="radio" name="b2" value="6" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">6</span>
+                                        </label>
+                                        <label class="form-check color-option color-violeta">
+                                            <input type="radio" name="b2" value="7" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">7</span>
+                                        </label>
+                                        <label class="form-check color-option color-gris">
+                                            <input type="radio" name="b2" value="8" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">8</span>
+                                        </label>
+                                        <label class="form-check color-option color-blanco">
+                                            <input type="radio" name="b2" value="9" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">9</span>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group pt-4">
+                                    <label>3ra. Multiplicador</label>
+                                    <div class="card p-2 shadow-sm" id="multiplicadorContainer">
+                                        
+                                        <label class="form-check color-option color-negro">
+                                            <input type="radio" name="mult" value="1" class="form-check-input" checked>
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x1</span>
+                                        </label>
+                                        <label class="form-check color-option color-marron">
+                                            <input type="radio" name="mult" value="10" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x10</span>
+                                        </label>
+                                        <label class="form-check color-option color-rojo">
+                                            <input type="radio" name="mult" value="100" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x100</span>
+                                        </label>
+                                        <label class="form-check color-option color-naranja">
+                                            <input type="radio" name="mult" value="1000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x1000</span>
+                                        </label>
+                                        <label class="form-check color-option color-amarillo">
+                                            <input type="radio" name="mult" value="10000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x10000</span>
+                                        </label>
+                                        <label class="form-check color-option color-verde">
+                                            <input type="radio" name="mult" value="100000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x100000</span>
+                                        </label>
+                                        <label class="form-check color-option color-azul">
+                                            <input type="radio" name="mult" value="1000000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x1000000</span>
+                                        </label>
+                                        <label class="form-check color-option color-violeta">
+                                            <input type="radio" name="mult" value="10000000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x10000000</span>
+                                        </label>
+                                        <label class="form-check color-option color-gris">
+                                            <input type="radio" name="mult" value="100000000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x100000000</span>
+                                        </label>
+                                        <label class="form-check color-option color-blanco">
+                                            <input type="radio" name="mult" value="1000000000" class="form-check-input">
+                                            <span class="custom-radio"></span>
+                                            <span class="w-100 d-flex justify-content-between">x1000000000</span>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pt-4 align-items-end">
+                            <div class="col-md-6">
+                                <label for="tolerancia">4ta. Banda (Tolerancia)</label>
+                                <div class="tolerancia-box" id="toleranciaContainer">
+                                    
+                                    <label class="form-check tolerancia-option color-dorado">
+                                        <input type="radio" name="tol" value="5" class="form-check-input" checked>
+                                        <span class="custom-radio"></span>
+                                        <span class="w-100 d-flex justify-content-between">Dorado 5%</span>
+                                    </label>
+                                    <label class="form-check tolerancia-option color-plata">
+                                        <input type="radio" name="tol" value="10" class="form-check-input">
+                                        <span class="custom-radio"></span>
+                                        <span class="w-100 d-flex justify-content-between">Plata 10%</span>
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0 d-flex justify-content-end">
+                                <button type="button" (click)="calcular()" class="btn btn-primary btn-lg" id="calcularBtn">
+                                    Calcular
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-lg-6 mt-4">
+                <h3 id="resultado" class="alert alert-info text-center shadow-sm">
+                    Resultado de Resistencia:
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+</html>
