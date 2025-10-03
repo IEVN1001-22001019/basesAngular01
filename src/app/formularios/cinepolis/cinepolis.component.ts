@@ -10,7 +10,7 @@ export class CinepolisComponent {
 
   mensaje:string="";
   nombre:string="";
-  TarjetaCine:boolean | undefined;
+  TarjetaCine:string="";
   cantidadCompradores:number=0;
   cantidadBoletos:number=0;
   total:number=0;
@@ -28,28 +28,30 @@ export class CinepolisComponent {
       if(this.cantidadBoletos > 5){
         this.totaldescuento = this.total * 0.85;
         this.totalfinal = this.totaldescuento;
-        this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal;
+        // this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal.toFixed(2);
       }
       if(this.cantidadBoletos >= 3 && this.cantidadBoletos <= 5){
         this.totaldescuento = this.total * 0.9;
         this.totalfinal = this.totaldescuento;
-        this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal;
+        // this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal.toFixed(2);
       }
       if(this.cantidadBoletos <= 2){
         this.totaldescuento = this.total;
         this.totalfinal = this.totaldescuento;
-        this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal;
+        // this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal.toFixed(2);
       }
-      if(this.TarjetaCine === true){
+      if(this.TarjetaCine === "si"){
         this.totaldescuentotarjeta = this.totaldescuento * 0.9;
         this.totalfinal = this.totaldescuentotarjeta;
-        this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal;
+        // this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totaldescuentotarjeta.toFixed(2);
       }
-      else if(this.TarjetaCine === false){
+      else if(this.TarjetaCine === "no"){
         this.totaldescuentotarjeta = this.totaldescuento;
         this.totalfinal= this.totaldescuentotarjeta;
-        this.mensaje = "Hola " + this.nombre + ", tu total es de $" + this.totalfinal;
+        // this.mensaje = "Hola " + this.nombre + ", tu total es de $" +  this.totaldescuentotarjeta.toFixed(2);
       }
+
+      this.mensaje = "Hola " + this.nombre + ", tu total es de $" +  this.totalfinal.toFixed(2);
     }
     else{
       this.mensaje = "Error, cantidad de boletos invalida";

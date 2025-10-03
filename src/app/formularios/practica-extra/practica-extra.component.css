@@ -1,0 +1,18 @@
+label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    button{
+        margin-top: 50px;
+    }
+
+    .formulario{
+        margin-top: 50px;
+    }
+
+    .resultado{
+        margin-top: 70px;
+    }

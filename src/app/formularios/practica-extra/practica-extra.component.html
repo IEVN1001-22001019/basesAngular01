@@ -1,0 +1,11 @@
+    <div class="formulario">
+        <label>X1 <input type="number" [(ngModel)]="x1"></label>
+        <label>Y1 <input type="number" [(ngModel)]="y1"></label>
+        <label>X2 <input type="number" [(ngModel)]="x2"></label>
+        <label>Y2 <input type="number" [(ngModel)]="y2"></label>
+        <button (click)="calculardistancia()">CALCULAR</button>
+    </div>
+
+    <div class="resultado">
+        {{mensaje}}
+    </div>
